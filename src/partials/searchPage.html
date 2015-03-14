@@ -1,0 +1,44 @@
+ <div class="container theme-showcase" role="main" ng-controller="searchPageController">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="well" style="background-image:url('images/car-pooling.jpeg');background-size:contain;">
+
+      <div class="page-header" style="border-bottom: 1px solid #fff">
+        <h1 style="color: #fff">Ride Share</h1>
+      </div>
+      	<div class="row">
+	        <div class="col-sm-7">
+	        </div>
+	        <div class="col-sm-5">
+	          <div class="panel panel-primary">
+	            <div class="panel-heading">
+	              <h3 class="panel-title">Where do you want to go?</h3>
+	            </div>
+	            <div class="panel-body">
+	              <form class="form-signin row">
+					        
+					        <div class="col-sm-12">
+					        	 <select class="form-control input-block" ng-model="source" ng-options="location for location in locations">
+                    <option value="">--- Source ---</option> 
+                    </select>
+					        </div>
+					        <br/><br/><br/>
+					        <div class="col-sm-12">
+					        	<select class="form-control input-block" ng-model="destination" ng-options="location for location in locations">
+                    <option value="">--- Destination ---</option> 
+                    </select>
+					        </div>
+					        <br/><br/><br/>
+					        <div class="col-sm-12">
+					        	<a href="#/searchResults" class="btn btn-primary btn-block">Find</a>
+					        </div>
+					      </form>
+	            </div>
+	          </div>
+	        </div><!-- /.col-sm-4 -->
+	      </div>
+      
+      </div>
+
+
+    </div> <!-- /container -->
